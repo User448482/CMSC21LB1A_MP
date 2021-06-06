@@ -1,0 +1,3 @@
+g++ main.cpp
+.\a board01.txt
+.\a test_cases\test0.txt
