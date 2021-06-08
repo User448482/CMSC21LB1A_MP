@@ -89,6 +89,7 @@ void doTheThing(vector<vector <char>> &board, vector<string> &temp_board, int nR
     // SWAPPING
     if (nMoves != 0) {
         sort(deathRow.begin(), deathRow.end(), greater_key());
+        sort(willLive.begin(), willLive.end(), less_key());
         cout << endl;
         int nToCheck; // prevents error if k is greater than number of bills that will survivable
         if (nMoves < willLive.size()) {
